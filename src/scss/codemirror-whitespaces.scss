@@ -1,0 +1,41 @@
+/*! codemirror-whitespaces */
+$whitespace-color: #444444 !default;
+
+.CodeMirror {
+  .cm-whitespace-spc::before {
+    position: absolute;
+    pointer-events: none;
+    color: #444444;
+  }
+
+  .cm-whitespace-spc-1::before  { content: '·'; }
+  .cm-whitespace-spc-2::before  { content: '··'; }
+  .cm-whitespace-spc-3::before  { content: '···'; }
+  .cm-whitespace-spc-4::before  { content: '····'; }
+  .cm-whitespace-spc-5::before  { content: '·····'; }
+  .cm-whitespace-spc-6::before  { content: '······'; }
+  .cm-whitespace-spc-7::before  { content: '·······'; }
+  .cm-whitespace-spc-8::before  { content: '········'; }
+  .cm-whitespace-spc-9::before  { content: '·········'; }
+  .cm-whitespace-spc-10::before { content: '··········'; }
+  .cm-whitespace-spc-11::before { content: '···········'; }
+  .cm-whitespace-spc-12::before { content: '············'; }
+  .cm-whitespace-spc-13::before { content: '·············'; }
+  .cm-whitespace-spc-14::before { content: '··············'; }
+  .cm-whitespace-spc-15::before { content: '···············'; }
+  .cm-whitespace-spc-16::before { content: '················'; }
+
+  .cm-whitespace-tab::before {
+    position: absolute;
+    pointer-events: none;
+    color: $whitespace-color;
+    content: '🠂';
+  }
+
+  .cm-whitespace-eol::after {
+    position: absolute;
+    pointer-events: none;
+    color: $whitespace-color;
+    content: '¬';
+  }
+}
